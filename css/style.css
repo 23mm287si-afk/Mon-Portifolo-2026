@@ -7,7 +7,6 @@
     --gris-clair:     #EEE;
 }
 
-
 * {
    margin: 0;
    padding: 0;
@@ -15,38 +14,40 @@
 }
 
 body {
-     background-color: var(--gris-tres-clair);
-     font-family: Roboto,sans-serif;
-     line-height: 1.6;
-    }
+  background-color: var(--gris-tres-clair);
+  font-family: Roboto,sans-serif;
+  line-height: 1.6;
+}
 
-    header {
-        background-color: white;
-        box-shadow: 2px  6px 10px rgba(0,0,0,0.05);
-        position:sticky;
-        top: 0;
-        z-index: 100;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem 3rem;
-    }
+header {
+    background-color: white;
+    box-shadow: 2px  6px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
 
-    header div a { 
-        text-decoration: none;
-        font-size: 2.2rem;
-        font-weight: bold;
-        color: var(--violet-doux);
-    }
-    ul li{
-        list-style: none;
-        margin-left:25px;
-    }
+header div a { 
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--viole-doux);
+}
 
-    ul {
-        display: flex;
+ul li{
+    list-style: none;
+    margin-left: 25px;
+}
+
+ul {
+  display: flex;
     
-    }
+}
+
 ul li a {
     text-decoration: none;
     color: var(--gris-tres-fonce);
@@ -89,7 +90,7 @@ a.active::after{
     align-items: center;
     gap: 5rem;
     text-align: center;
-    margin: 10rem 2rem
+    margin: 10rem 2rem;
 }
 .hero img{
     width: 300px;
@@ -123,7 +124,7 @@ a.active::after{
     letter-spacing: 1.1px;
     font-size: 600;
     margin-top: 1rem;
-    transition:background-color 0.3s ease , transform 0.2s ease
+    transition:background-color 0.3s ease , transform 0.2s ease;
 }
 .hero a:hover{
  background-color: var(--gris-tres-fonce);
@@ -152,4 +153,74 @@ section h2 ::after {
     background-color: var(--viole-doux);
     margin: 1.2rem auto ;
     border-radius: 2px;
+}
+
+.apropos p {
+    margin-bottom: 2em;
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+}
+
+.competences table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #FFF;
+    box-shadow: 0  5px 15px rgb(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.competences table th , .competences table td {
+    padding: 15px;
+}
+
+.competences table thead {
+    background-color: var(--viole-doux);
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.competences table tbody td {
+    border-bottom: 1px solid var(--gris-clair);
+}
+
+.competences table tbody tr:nth-child(even) {
+    background-color:#FDFDFD ;
+}
+
+.competences table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.competences table tbody tr:hover{
+    background-color: #F0f0f0;
+}
+.competences table thead th {
+    text-align: left;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--viole-doux);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+footer a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3 ease , transform 0.2s ease;
+}
+
+footer a:hover {
+       color: var(--orange-vif);
+       transform: translateY(-3px);
 }
